@@ -10,7 +10,7 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 // Creiamo un array di squadre di calcio con solo i nomi
 let squadre = [
-    
+
     {
         nome: 'squadra_1',
         punti: 0,
@@ -36,3 +36,8 @@ let squadre = [
     }
 ];
 
+// Assegniamo valori random a punti e falli subiti
+for (let i = 0; i < squadre.length; i++) {
+    squadre[i].punti = Math.floor(Math.random() * 100);
+    squadre[i].falli = Math.floor(Math.random() * 50);
+}
