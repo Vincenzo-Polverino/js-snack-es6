@@ -19,3 +19,16 @@ const bikes = [
     },
 ]
 
+let peso_minore = bikes[0].peso
+
+for (let i = 0; i < bikes.length; i++) {
+    
+    
+    let bike = bikes[i];
+
+    if (bike.peso < peso_minore) {
+        peso_minore = bike.peso
+    }
+
+}
+console.log(peso_minore);
