@@ -41,3 +41,17 @@ for (let i = 0; i < squadre.length; i++) {
     squadre[i].punti = Math.floor(Math.random() * 100);
     squadre[i].falli = Math.floor(Math.random() * 50);
 }
+
+
+// Creiamo un nuovo array con solo nomi e falli subiti
+let nomi_falli = [];
+for (let i = 0; i < squadre.length; i++) {
+    nomi_falli.push(
+        {
+            nome: squadre[i].nome,
+            falli: squadre[i].falli
+        }
+    );
+}
+
+console.log(squadre, nomi_falli);
